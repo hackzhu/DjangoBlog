@@ -1,0 +1,9 @@
+[program:djangoblog]
+command = /home/server/python//gunicorn_start.sh
+user = server
+autostart=true
+autorestart=true
+
+redirect_stderr = true
+stdout_logfile = /var/log/djangoblog.log
+stderr_logfile=/var/log/djangoblog.err
